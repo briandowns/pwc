@@ -12,5 +12,5 @@ make
 
 ```sh
 bin/pwc testdata/test_file.txt
-       2      12       65 test_file.txt
+Lines: 6650882 Words: 294614626 Chars: 1560968812
 ```
