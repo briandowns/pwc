@@ -1,4 +1,4 @@
-# file_stats build process
+# pwc build process
 
 FPC ?= fpc
 

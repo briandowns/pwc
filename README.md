@@ -1,6 +1,6 @@
 # file stats
 
-pwc is a UNIX `wc` clone written in 
+pwc is a UNIX `wc` clone written in Pascal.
 
 ## Build
 
