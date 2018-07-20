@@ -39,6 +39,7 @@ begin
 
     FileName := ParamStr(1);
 
+    (* initialize counts *)
     CharsCount := 1;
     WordsCount := 0;
     LinesCount := 0;
