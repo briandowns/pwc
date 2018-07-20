@@ -59,7 +59,7 @@ begin
                 LineLen := Length(s);
                 CharsCount += LineLen;
             end;
-            CharsCount += 1;
+            CharsCount += 1; (* account for EOF character *)
             CloseFile(F);
         end;
     except
