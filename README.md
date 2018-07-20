@@ -12,5 +12,5 @@ make
 
 ```sh
 bin/pwc testdata/test_file.txt
-       2          0       65 test_file.txt
+       2      12       65 test_file.txt
 ```
