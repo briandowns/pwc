@@ -19,7 +19,6 @@ var
     F: TextFile;
     s: string;
     LineLen: Integer;
-    FileName: string;
     WordDelims: TSysCharSet;
 
 (* VerifyArguments verifies that the program has been 
@@ -37,8 +36,6 @@ end;
 begin
     VerifyArguments;
 
-    FileName := ParamStr(1);
-
     (* initialize counts *)
     CharsCount := 1;
     WordsCount := 0;
@@ -49,7 +46,7 @@ begin
      * results in false positives. *)
     WordDelims := [#0..' ', ',', '.', ';', '/', '\', ':', '"', '`'];
 
-    AssignFile(F, FileName);
+    AssignFile(F, ParamStr(1));
     Reset(f);
 
     try
@@ -69,6 +66,6 @@ begin
         on E: EInOutError do
             writeln('file handling error occurred. ', E.Message);
     end;
-    writeLn('    ', LinesCount, '    ', WordsCount , '    ', CharsCount, ' ', FileName);
+    writeLn('Lines: ', LinesCount, ' Words: ', WordsCount , ' Chars: ', CharsCount);
 end. -- le fin
  
