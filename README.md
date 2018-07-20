@@ -1,4 +1,4 @@
-# file stats
+# pwc
 
 pwc is a UNIX `wc` clone written in Pascal.
 
