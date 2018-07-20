@@ -69,6 +69,6 @@ begin
             writeln('File handling error occurred. Details: ', E.Message);
     end;
     
-    writeLn('Lines: ', lc, ' Words: ', wc , ' Chars: ', cc, ' ');
+    writeLn('    ', lc, '    ', wc , '    ', cc, ' ', FileName);
 end. -- le fin
  

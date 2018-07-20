@@ -3,7 +3,7 @@
 FPC ?= fpc
 
 BINDIR := bin
-BINARY := file_stats
+BINARY := pwc
 
 $(BINDIR)/$(BINARY):
 	if [ ! -d $(BINDIR) ]; then mkdir $(BINDIR); fi
